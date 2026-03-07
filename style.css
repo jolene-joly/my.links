@@ -81,3 +81,12 @@ body {
     font-size: 1.05rem;
     color: #db7093; /* لون وردي غامق قليلاً للخط ليظهر بوضوح */
 }
+
+.main-title {
+    font-size: 2.2rem;       /* حجم كبير */
+    color: #db7093;          /* لون وردي داكن متناسق مع الحدود */
+    margin-top: 15px;        /* مسافة تحت الصورة */
+    margin-bottom: 25px;     /* مسافة فوق الروابط */
+    text-align: center;      /* لضمان التوسيط */
+    font-weight: bold;
+}
