@@ -1,0 +1,83 @@
+/* تنسيق الصفحة العام */
+body {
+    /* تدرج لوني من الوردي الفاتح جداً إلى الأبيض */
+    background: linear-gradient(135deg, #fff0f5 0%, #ffffff 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* توسيط أفقي */
+    align-items: center;    /* توسيط عمودي */
+    min-height: 100vh;      /* ليأخذ كامل ارتفاع الشاشة */
+}
+
+/* الحاوية الرئيسية */
+.container {
+    width: 90%;
+    max-width: 450px; /* حجم مثالي للخانات */
+    background: rgba(255, 255, 255, 0.8); /* خلفية بيضاء شفافة قليلاً */
+    padding: 25px;
+    border-radius: 20px; /* زوايا منحنية ناعمة */
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.3); /* ظل وردي ناعم */
+    text-align: center;
+}
+
+/* الصورة العلوية العريضة */
+.header-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* منحنيات للصورة */
+    margin-bottom: 25px;
+}
+
+.links-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* مسافة بين الروابط */
+}
+
+/* تصميم خانة الرابط */
+.link-card {
+    display: flex;
+    flex-direction: row-reverse; /* الأيقونة على اليسار والنص بالوسط */
+    align-items: center;
+    background-color: #ffffff;
+    border: 1.5px solid #ffc0cb; /* إطار وردي فاتح */
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+/* تأثير عند تمرير الماوس */
+.link-card:hover {
+    transform: translateY(-3px); /* حركة بسيطة للأعلى */
+    background-color: #fff5f7; /* تغيير بسيط في اللون */
+    border-color: #ffb6c1;
+    box-shadow: 0 6px 12px rgba(255, 182, 193, 0.4);
+}
+
+/* منطقة الصورة/الأيقونة (اليسار) */
+.icon-area {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-area img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* منطقة النص (الخط باللون الوردي) */
+.text-area {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #db7093; /* لون وردي غامق قليلاً للخط ليظهر بوضوح */
+}
